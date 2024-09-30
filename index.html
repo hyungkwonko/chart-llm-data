@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart LLM Resources</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      border: 1px solid #eaeaea;
+    }
+
+    /* Headings */
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #2980b9;
+    }
+
+    /* Links */
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    /* Paragraphs */
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    /* Lists */
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background-color: #f4f6f7;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    ul li strong {
+      color: #34495e;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      margin-top: 50px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Chart LLM Resources</h1>
+
+    <h2>Link to Chart Dataset</h2>
+    <p>
+      You can access the chart dataset at the following link:
+      <a href="https://github.com/hyungkwonko/chart-llm/tree/main/docs/data/chart" target="_blank">
+        Chart Dataset
+      </a>.
+    </p>
+    <p>
+      Please note that the datasets are not images, but Vega-Lite specifications. You may visualize and save them as
+      PNG,
+      using the
+      <a href="https://vega.github.io/editor/#/edited" target="_blank">
+        Vega-Lite editor
+      </a>.
+    </p>
+
+    <h2>NL Dataset</h2>
+    <p>
+      We provide sample results of L1/L2 captions, utterances, and questions for <a
+        href="https://github.com/hyungkwonko/chart-llm/tree/main/docs/data/chart_48_img">48 charts selected via
+        stratified sampling</a>. You can access the results from the following links:
+    </p>
+    <ul>
+      <li>
+        <strong>L1:</strong>
+        <a href="https://github.com/hyungkwonko/chart-llm/blob/main/framework/result/l1_description.json"
+          target="_blank">
+          L1_Description.JSON
+        </a>
+      </li>
+      <li>
+        <strong>L2:</strong>
+        <a href="https://github.com/hyungkwonko/chart-llm/blob/main/framework/result/task1_L23.csv" target="_blank">
+          Task1_L2.CSV
+        </a> (column: L2)
+      </li>
+      <li>
+        <strong>Utterance:</strong>
+        <a href="https://github.com/hyungkwonko/chart-llm/blob/main/framework/result/task2.csv" target="_blank">
+          Task2.CSV
+        </a> (columns: commands, queries, questions)
+      </li>
+      <li>
+        <strong>Question:</strong>
+        <a href="https://github.com/hyungkwonko/chart-llm/blob/main/framework/result/task3.csv" target="_blank">
+          Task3.CSV
+        </a> (columns: lookup-nonvisual, lookup-visual, compositional-nonvisual, compositional-visual, open-ended)
+      </li>
+    </ul>
+
+    <h2>Generate More Captions</h2>
+    <p>
+      You can generate more captions using Vega-Lite and our prompting technique. Learn how to do so by visiting the
+      following link:
+      <a href="https://github.com/hyungkwonko/chart-llm#example-nl-dataset-generation" target="_blank">
+        Example NL Dataset Generation
+      </a>.
+    </p>
+
+  </div>
+
+  <footer>
+    <p>Developed by Chart LLM Team | <a href="https://github.com/hyungkwonko/chart-llm" target="_blank">GitHub</a></p>
+  </footer>
+
+</body>
+
+</html>
